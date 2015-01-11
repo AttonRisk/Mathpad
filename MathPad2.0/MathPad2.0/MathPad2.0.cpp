@@ -1,0 +1,19 @@
+// MathPad2.0.cpp : main project file.
+
+#include "stdafx.h"
+#include "Form1.h"
+
+using namespace MathPad20;
+using namespace std;
+
+[STAThreadAttribute]
+int main(array<System::String ^> ^args)
+{
+	// Enabling Windows XP visual effects before any controls are created
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false); 
+
+	// Create the main window and run it
+	Application::Run(gcnew Form1());
+	return 0;
+}
